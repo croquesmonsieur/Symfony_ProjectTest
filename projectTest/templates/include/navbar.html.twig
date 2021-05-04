@@ -13,6 +13,9 @@
                 <li class="nav-item btn btn-primary">
                     <a href="{{ path('app_login') }}" class="nav-link">Login</a>
                 </li>
+                <li class="nav-item btn btn-primary float-end">
+                    <a href="{{ path('register') }}" class="nav-link">Register</a>
+                </li>
                 {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                 <li class="nav-item btn btn-primary float-right">
                     <a href="{{ path('app_logout') }}" class="nav-link">Logout</a>
